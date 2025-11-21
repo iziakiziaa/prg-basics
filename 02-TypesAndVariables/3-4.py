@@ -1,0 +1,10 @@
+a = 3
+b = 5
+dodawanie = a + b
+odejmowanie = a - b
+mnozenie = a * b
+dzielenie = a / b
+print(f'{a}+{b}={dodawanie}')
+print(f'{a}-{b}={odejmowanie}')
+print(f'{a}*{b}={mnozenie}')
+print(f'{a}/{b}={dzielenie}')
