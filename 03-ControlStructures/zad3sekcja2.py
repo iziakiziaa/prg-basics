@@ -4,15 +4,21 @@
 # per 100 km is 7, 9 and 6 respectively. Write a program that calculates
 # total fuel consumption for a given distance in km and a given
 # driving mode.
-#
-driving_mode = input('Enter driving mode (A/M/E):')
-distance = int(input('Enter distance in km'))
+driving_mode = input('Enter driving mode (A/M/E): ').upper()
+distance = int(input('Enter distance in km: '))
+
+fuel_consumption = 0
 
 if driving_mode == 'A':
-    fuel_consumption = 7 # liters per 100km
+    fuel_consumption = 7
 elif driving_mode == 'M':
-    ...        
-...
+    fuel_consumption = 9
+elif driving_mode == 'E':
+    fuel_consumption = 6
+else:
+    print("Error: Invalid driving mode entered. Please use A, M, or E.")
+    exit()
 
-total_consumption = ...
-print('Total fuel consumption over a distance of ... km in driving mode ... is ... liters')
+total_consumption = distance * (fuel_consumption / 100) 
+
+print(f'Total fuel consumption over a distance of {distance} km in driving mode {driving_mode} is {total_consumption:.2f} liters')
