@@ -4,10 +4,11 @@ def f(player1,player2):
     }
     sum1 = sum(values[c] for c in player1)
     sum2 = sum(values[c] for c in player2)
+
     if sum1 >= sum2:
         return True
     else:
         return False
 
 if __name__ == "__main__":
-    print(f("AJ972", "AQT72"))
+    print(f("9532", "K8"))
